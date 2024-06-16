@@ -10,7 +10,7 @@ import Foundation
 
 class NoteViewModel : ObservableObject {
     
-    @Published private(set) var notes = [NoteModel]()
+    @Published var notes = [NoteModel]()
     let db = Firestore.firestore()
     
     func fetchData() {
@@ -29,5 +29,38 @@ class NoteViewModel : ObservableObject {
                     }
                 }
             }
+    }
+    
+    func saveData(note: NoteModel) {
+        
+        if let id = note.id {
+            //Edit note
+            let docRef = db.collection("notes").document(id)
+            docRef.updateData([
+                "title": note.title,
+                "notesdata": note.notesdata
+            ]) { err in
+                if let err = err {
+                    print("Error updating document : \(err)")
+                } else {
+                    print("Document successfully updated")
+                }
+            }
+        } else {
+            //Add note
+            if !note.title.isEmpty || !note.notesdata.isEmpty {
+                var newDocRef: DocumentReference? = nil
+                newDocRef = db.collection("notes").addDocument(data: [
+                    "title": note.title,
+                    "notesdata": note.notesdata
+                ]) { err in
+                    if let err = err {
+                        print("Error adding document : \(err)")
+                    } else {
+                        print("Document added with: \(newDocRef!.documentID)")
+                    }
+                }
+            }
+        }
     }
 }
