@@ -15,6 +15,11 @@
 		D916D93A2C1E4A0700037D11 /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916D9392C1E4A0700037D11 /* NoteViewModel.swift */; };
 		D916D93C2C1E4AFE00037D11 /* NoteDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916D93B2C1E4AFE00037D11 /* NoteDetail.swift */; };
 		D916D93E2C1E4BFB00037D11 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D916D93D2C1E4BFB00037D11 /* FirebaseFirestoreSwift */; };
+		D91B4F5C2C1E79DF001E059D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D91B4F5B2C1E79DF001E059D /* FirebaseAuth */; };
+		D91B4F5E2C1E7DB9001E059D /* NoteAppLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B4F5D2C1E7DB9001E059D /* NoteAppLogin.swift */; };
+		D91B4F602C1E836A001E059D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B4F5F2C1E836A001E059D /* String.swift */; };
+		D91B4F622C1E852D001E059D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B4F612C1E852D001E059D /* SignUpView.swift */; };
+		D91B4F642C1E8681001E059D /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B4F632C1E8681001E059D /* AuthView.swift */; };
 		D92DC5E12C1E4339009ADECF /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92DC5E02C1E4339009ADECF /* NotesApp.swift */; };
 		D92DC5E32C1E4339009ADECF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92DC5E22C1E4339009ADECF /* ContentView.swift */; };
 		D92DC5E52C1E433A009ADECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D92DC5E42C1E433A009ADECF /* Assets.xcassets */; };
@@ -46,6 +51,10 @@
 		D916D9372C1E498000037D11 /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
 		D916D9392C1E4A0700037D11 /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 		D916D93B2C1E4AFE00037D11 /* NoteDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetail.swift; sourceTree = "<group>"; };
+		D91B4F5D2C1E7DB9001E059D /* NoteAppLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteAppLogin.swift; sourceTree = "<group>"; };
+		D91B4F5F2C1E836A001E059D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		D91B4F612C1E852D001E059D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		D91B4F632C1E8681001E059D /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		D92DC5DD2C1E4339009ADECF /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92DC5E02C1E4339009ADECF /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
 		D92DC5E22C1E4339009ADECF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D916D9362C1E476B00037D11 /* FirebaseDatabaseSwift in Frameworks */,
+				D91B4F5C2C1E79DF001E059D /* FirebaseAuth in Frameworks */,
 				D916D9342C1E476B00037D11 /* FirebaseDatabase in Frameworks */,
 				D916D9322C1E476B00037D11 /* FirebaseAnalytics in Frameworks */,
 				D916D93E2C1E4BFB00037D11 /* FirebaseFirestoreSwift in Frameworks */,
@@ -113,6 +123,10 @@
 				D92DC5E02C1E4339009ADECF /* NotesApp.swift */,
 				D916D9372C1E498000037D11 /* NoteModel.swift */,
 				D916D9392C1E4A0700037D11 /* NoteViewModel.swift */,
+				D91B4F5F2C1E836A001E059D /* String.swift */,
+				D91B4F5D2C1E7DB9001E059D /* NoteAppLogin.swift */,
+				D91B4F612C1E852D001E059D /* SignUpView.swift */,
+				D91B4F632C1E8681001E059D /* AuthView.swift */,
 				D916D93B2C1E4AFE00037D11 /* NoteDetail.swift */,
 				D92DC5E22C1E4339009ADECF /* ContentView.swift */,
 				D916D92E2C1E468000037D11 /* GoogleService-Info.plist */,
@@ -168,6 +182,7 @@
 				D916D9332C1E476B00037D11 /* FirebaseDatabase */,
 				D916D9352C1E476B00037D11 /* FirebaseDatabaseSwift */,
 				D916D93D2C1E4BFB00037D11 /* FirebaseFirestoreSwift */,
+				D91B4F5B2C1E79DF001E059D /* FirebaseAuth */,
 			);
 			productName = Notes;
 			productReference = D92DC5DD2C1E4339009ADECF /* Notes.app */;
@@ -288,10 +303,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D916D93A2C1E4A0700037D11 /* NoteViewModel.swift in Sources */,
+				D91B4F5E2C1E7DB9001E059D /* NoteAppLogin.swift in Sources */,
 				D92DC5E32C1E4339009ADECF /* ContentView.swift in Sources */,
 				D916D9382C1E498000037D11 /* NoteModel.swift in Sources */,
+				D91B4F622C1E852D001E059D /* SignUpView.swift in Sources */,
+				D91B4F602C1E836A001E059D /* String.swift in Sources */,
 				D92DC5E12C1E4339009ADECF /* NotesApp.swift in Sources */,
 				D916D93C2C1E4AFE00037D11 /* NoteDetail.swift in Sources */,
+				D91B4F642C1E8681001E059D /* AuthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,6 +666,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D916D9302C1E476B00037D11 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
+		};
+		D91B4F5B2C1E79DF001E059D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D916D9302C1E476B00037D11 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

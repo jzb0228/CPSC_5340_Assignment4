@@ -7,6 +7,7 @@
 import FirebaseCore
 import FirebaseFirestore
 import Foundation
+import FirebaseAuth
 
 class NoteViewModel : ObservableObject {
     
