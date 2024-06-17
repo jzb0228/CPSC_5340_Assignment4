@@ -97,6 +97,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D91B4F652C1FF026001E059D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D91B4F5F2C1E836A001E059D /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D91B4F662C1FF037001E059D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D91B4F5D2C1E7DB9001E059D /* NoteAppLogin.swift */,
+				D91B4F612C1E852D001E059D /* SignUpView.swift */,
+				D91B4F632C1E8681001E059D /* AuthView.swift */,
+				D916D93B2C1E4AFE00037D11 /* NoteDetail.swift */,
+				D92DC5E22C1E4339009ADECF /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D91B4F672C1FF06E001E059D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D916D9372C1E498000037D11 /* NoteModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D92DC5D42C1E4339009ADECF = {
 			isa = PBXGroup;
 			children = (
@@ -121,14 +149,10 @@
 			isa = PBXGroup;
 			children = (
 				D92DC5E02C1E4339009ADECF /* NotesApp.swift */,
-				D916D9372C1E498000037D11 /* NoteModel.swift */,
 				D916D9392C1E4A0700037D11 /* NoteViewModel.swift */,
-				D91B4F5F2C1E836A001E059D /* String.swift */,
-				D91B4F5D2C1E7DB9001E059D /* NoteAppLogin.swift */,
-				D91B4F612C1E852D001E059D /* SignUpView.swift */,
-				D91B4F632C1E8681001E059D /* AuthView.swift */,
-				D916D93B2C1E4AFE00037D11 /* NoteDetail.swift */,
-				D92DC5E22C1E4339009ADECF /* ContentView.swift */,
+				D91B4F662C1FF037001E059D /* Views */,
+				D91B4F672C1FF06E001E059D /* Model */,
+				D91B4F652C1FF026001E059D /* Extensions */,
 				D916D92E2C1E468000037D11 /* GoogleService-Info.plist */,
 				D92DC5E42C1E433A009ADECF /* Assets.xcassets */,
 				D92DC5E62C1E433A009ADECF /* Preview Content */,
